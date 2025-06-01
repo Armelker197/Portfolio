@@ -1,0 +1,587 @@
+/***********
+*   FONT   *
+***********/
+
+
+@font-face {
+    font-family: 'kusanagiregular';
+    src: url(fonts/underbold-webfont.woff2) format('woff2'),
+        url(fonts/underbold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'creato_displayblack';
+    src: url(fonts/creatodisplay-black-webfont.woff2) format('woff2'),
+        url(fonts/creatodisplay-black-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'creato_displayblack_italic';
+    src: url(fonts/creatodisplay-blackitalic-webfont.woff2) format('woff2'),
+        url(fonts/creatodisplay-blackitalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'creato_displaybold';
+    src: url(fonts/creatodisplay-bold-webfont.woff2) format('woff2'),
+        url(fonts/creatodisplay-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'creato_displaybold_italic';
+    src: url(fonts/creatodisplay-bolditalic-webfont.woff2) format('woff2'),
+        url(fonts/creatodisplay-bolditalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'creato_displayregular';
+    src: url(fonts/creatodisplay-regular-webfont.woff2) format('woff2'),
+        url(fonts/creatodisplay-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'creato_displaythin';
+    src: url(fonts/creatodisplay-thin-webfont.woff2) format('woff2'),
+        url(fonts/creatodisplay-thin-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**********************
+*   CLASSES COULEUR   *
+***********************/
+
+/* Couleurs de fond */
+
+.red:not(h1, h2, h3, p, figcaption) {
+    background-color: #D92D5B;
+}
+
+.light_red:not(h1, h2, h3, p, figcaption) {
+    background-color: #F7CDD8;
+}
+
+.purple:not(h1, h2, h3, p, figcaption) {
+    background-color: #6117B5;
+}
+
+.light_purple:not(h1, h2, h3, p, figcaption) {
+    background-color: #C9A6F0;
+}
+
+.gold:not(h1, h2, h3, p, figcaption) {
+    background-color: #D5C46C;
+}
+
+.light_gold:not(h1, h2, h3, p, figcaption) {
+    background-color: #FFF6C2;
+}
+
+.white:not(h1, h2, h3, p, figcaption) {
+    background-color: #FFFFFF;
+}
+
+/* Couleurs de texte */
+
+h1.red, h2.red, h3.red, p.red, figcaption.red {
+    color: #D92D5B;
+}
+
+h1.light_red, h2.light_red, h3.light_red, p.light_red, figcaption.light_red {
+    color: #F7CDD8;
+}
+
+h1.purple, h2.purple, h3.purple, p.purple, figcaption.purple {
+    color: #6117B5;
+}
+
+h1.light_purple, h2.light_purple, h3.light_purple, p.light_purple, figcaption.light_purple {
+    color: #C9A6F0;
+}
+
+h1.gold, h2.gold, h3.gold, p.gold, figcaption.gold {
+    color: #D5C46C;
+}
+
+h1.light_gold, h2.light_gold, h3.light_gold, p.light_gold, figcaption.light_gold {
+    color: #FFF6C2;
+}
+
+h1.white, h2.white, h3.white, p.white, figcaption.white {
+    color: #FFFFFF;
+}
+
+/* Bouton d'article */
+
+.bouton {
+    display: block;
+    width: 10em;
+
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    
+    font-size: 24px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: black;
+    color: white;
+}
+
+/* Format smartphone */
+
+
+/**************
+*   GENERAL   *
+**************/
+
+body {
+    font-family: 'creato_displayregular', Arial, sans-serif;
+    line-height: 28px;
+    font-size: 19px;
+    margin: 0;
+}
+
+h1, h2, h3, .bouton, figcaption {
+    font-family: 'kusanagiregular', Arial, sans-serif;
+    font-weight: normal;
+}
+
+h1, h2 {
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    padding: 20px;
+}
+
+h1 {
+    margin: 30px;
+    font-size: 78px;
+    line-height: 60px;
+}
+
+.h1_picto::before {
+    margin-right: 20px;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
+.h1_purple {
+    color: #6117B5;
+}
+
+.h1_purple::before {
+    background-image: url(images/Pictogramme_volleyball_purple.png);
+}
+
+.h1_pink {
+    color: #D92D5B;
+}
+
+.h1_pink::before {
+    background-image: url(images/Pictogramme_volleyball_pink.png);
+}
+
+h2 {
+    font-size: 58px;
+    line-height: 45px;
+}
+
+h2:first-child, h3:first-child {
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 44px;
+    line-height: 35px;
+}
+
+h4{
+    font-size: 34px;
+    
+}
+
+.medailleor{
+    background:#EEE196; /* à changer */
+    border-radius:50%;
+    width:75px;
+    height:75px;
+    flex-shrink: 0;
+}
+
+.medailleargent {
+    background:#C0C0C0; /* à changer */
+    border-radius: 50%;
+    width:75px;
+    height:75px;
+    flex-shrink: 0;
+}
+
+.medaillebronze {
+    background:#CD7F32; /* à changer */
+    border-radius:50%;
+    width:75px;
+    height:75px;
+    flex-shrink: 0;
+}
+
+.or{
+    background-color: #EEE196;
+}
+
+.argent{
+    background-color: #C0C0C0;
+}
+
+.bronze{
+    background-color: #CD7F32;
+}
+
+.gris {
+    background: #ddd;
+}
+
+.black {
+    color: #000;
+}
+
+article {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+img:not(main > img, table img) {
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*************
+*   HEADER   *
+*************/
+
+header {
+    display: flex;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    padding: 0.15em 0.3em;
+    background-color: #D92D5B;
+}
+
+header > div {
+    width: 3px;
+    height: 40px;
+
+    background-color: white;
+}
+
+header > nav > ul {
+    display: flex;
+    padding-left: 1em;
+}
+
+header > nav > ul > li {
+    cursor: pointer;
+
+    list-style: none;
+    margin: 0 1em;
+}
+
+header > a > img {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 1em 0 0.5em;
+}
+
+header > img {
+    display: none;
+    border-radius: 0;
+}
+
+/* Boutons */
+    
+header > nav > ul > li > a {
+    display: inline-block;
+
+    width: 6em;
+    padding: 0em 2em;
+
+    color: black;
+
+    font-family: 'kusanagiregular', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: #F7CDD8;
+    
+    border-style: solid;
+    border-color: #F7CDD8;
+    
+    border-radius: 30px;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: transparent;
+    color: #F7CDD8;
+}
+
+@media screen and (max-width: 428px){
+    h1 {
+        font-size: 55px;
+        line-height: 45px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    article > div > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .drapeau {
+        flex-wrap: wrap;
+    }
+    
+    .Sportifs {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 4;
+        border-radius: 5px;
+    }
+    .Sportifs > img{
+        height: 300px;
+        width: 250px;
+        margin: 10px;
+        object-fit:cover;
+        object-position: top;
+        display: block;
+        margin: 0 auto;
+        flex-shrink: 1;
+        border-radius: 5px;
+    }
+    .Sportifs > div{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+    }
+    
+    .imgDiscipline{
+        width: 100%;
+        padding: 0;
+    }
+
+    header {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    header > div {
+        display: none;
+    }
+
+    header > nav > ul {
+        display: none;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    header:hover > nav > ul {
+        width: 100%;
+        display: block;
+    }
+
+    header > nav > ul > li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    header > nav > ul > li > a {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: .5em 1.5em;
+        font-size: inherit;
+        box-sizing: border-box;
+        border-style: none;
+        border-radius: 0;
+    }
+    header > nav > ul > li > a:hover {
+        background-color: white;
+        color: black;
+    }
+    header > a > img {
+        margin: auto;
+    }
+}
+
+/*************
+*   FOOTER   *
+*************/
+
+footer {
+    background-color: black;
+    color: white;
+    height: 247px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer div {
+    width: 100%;
+    padding-right: 1rem;
+}
+footer div div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+footer div div aside + aside + hr{
+    display: none;
+}
+footer div div + hr{
+    display: block;
+}
+footer div div aside + aside{
+    order: 99;
+}
+footer div div nav article{
+    flex-direction: row;
+    margin-right: 1rem;
+}
+footer div div nav article ul{
+    list-style: none;
+    display: inline;
+}
+footer div div > nav {
+    display: flex;
+}
+footer div div aside + aside img{
+    height: 50px;
+    width: 50px;
+}
+footer div div aside + aside{
+    margin-left: auto;
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    gap: 0;
+}
+footer div div div {
+    justify-content: right;
+    margin-left: auto;
+}
+footer div div nav a {
+    margin-right: 1rem;
+}
+footer div div > aside img{
+    height: 120px;
+}
+
+@media screen and (max-width:428px) {
+    footer{
+        padding: 1em;
+        padding-bottom: 2em;
+        margin: 0;
+    }
+
+    footer div div{
+        display: block;
+    }
+
+    footer div div aside:first-child img{
+        position: relative;
+        top: 3em;
+    }
+
+    footer div div aside + aside{
+        position: relative;
+        left: -10em;
+        order: 0;
+        flex-wrap: nowrap;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    footer div div aside + aside img{
+        height: 40px;
+        width: 40px;
+    }
+
+    footer div div aside + aside + hr{
+        display: block;
+    }
+
+    footer div div + hr{
+        display: none;
+    }
+
+    footer div div div{
+        display: none;
+    }
+
+    footer nav{
+        font-size: small;
+    }
+
+    footer div div > aside img{
+        height: 90px;
+    }
+}

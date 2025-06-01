@@ -192,3 +192,11 @@ footer{
   padding: 10px 0;
   border-radius: 150px;
 }*/
+
+/*Media query*/
+
+@media(max-width:800px){
+  #screenshots img{
+    width: 100%;
+  }
+}
